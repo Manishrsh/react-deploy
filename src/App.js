@@ -1,53 +1,21 @@
-import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
 
-const textStyle = { display: "block", marginRight: "5px" };
-
-function Dashboard() {
-
+function App() {
   return (
-    <Container >
-      <Row>
-        <Col sm={8}>
-        <Card className="mt-3" style={{height:500}}>
-  <Card.Header>Featured</Card.Header>
-  <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
-    <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
-        </Col>
-        <Col sm={4}>
-          <Card style={{height:500}} id="boxmain" className="mt-3 border-info" >
-          <Card id="Box" >
-            <Card.Body>
-              <Card.Title>Task Tittle</Card.Title>
-              <div className="info">
-                <p>Date</p>
-                <p>Time <b>2:00</b></p>
-              </div>
-              <Card.Text>
-                status
-              </Card.Text>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <p> Due Date</p>
-              <div  className="button-container">
-          <Button variant="primary" className="btnok1">Add Task</Button>
-          <Button variant="primary"className="btnok" >Button 2</Button>
-        </div>
-            </Card.Body>
-          </Card>
-          </Card>
-          </Col>
-      </Row>
-    </Container>
+<>
+  <Button variant="primary">Primary</Button>{' '}
+  <Button variant="secondary">Secondary</Button>{' '}
+  <Button variant="success">Success</Button>{' '}
+  <Button variant="warning">Warning</Button>{' '}
+  <Button variant="danger">Danger</Button> <Button variant="info">Info</Button>{' '}
+  <Button variant="light">Light</Button> <Button variant="dark">Dark</Button>{' '}
+  <Button variant="link">Link</Button>
+</>
   );
 }
 
-export default Dashboard;
+export default App;
