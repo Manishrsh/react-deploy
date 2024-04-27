@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Navbar from Navbar
-
+import Navbar from './componets/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './componets/Home'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Navbar />
-  </React.StrictMode>
+  <>
+  <Navbar/>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/home" element={<Home />}>
+      
+    </Route>
+  </Routes>
+</BrowserRouter>
+</>
 );
 
 // If you want to start measuring performance in your app, pass a function
